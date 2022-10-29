@@ -7,4 +7,4 @@ n = input("no. of harmonics: ")
 for i=1:2:n
     s = (sin(2*%pi*i*t))/i + s
 end
-plot(t,s)
+plot(t,s);
