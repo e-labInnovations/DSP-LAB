@@ -3,7 +3,7 @@ clear
 close
 x=[1,2,3,4]
 N=16//16-DFT
-x=[x,zeros(1,N-length(x))]//adju
+x=[x,zeros(1,N-length(x))]//
 k=0:1:N-1
 X=fft(x)
 amp=abs(X)
