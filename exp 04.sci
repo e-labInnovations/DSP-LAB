@@ -30,5 +30,3 @@ amp = abs(X')
 title(string(N) + ' - DFT')
 plot(t, amp)
 plot2d3(t, amp)
-
-disp(X)
