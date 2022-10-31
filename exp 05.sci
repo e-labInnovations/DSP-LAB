@@ -18,8 +18,8 @@ for k=1:1:n
     y(1, k) = input('Enter y(' + string(k) + ') value: ') 
 end
 
-a = input("Enter coefficient of x: ")
-b = input("Enter coefficient of y: ")
+a = input("Enter coefficient of x. a: ")
+b = input("Enter coefficient of y. b: ")
 
 LHS = a*fft(x)+b*fft(y)
 RHS = fft(a*x +b*y)
@@ -32,4 +32,18 @@ disp(RHS)
 if LHS == RHS then
     disp('LHS = RHS')
     disp('Hence linearity proved')
+end
+
+
+LHS = sum(abs(x) .* abs(x))
+RHS = (1/n) * sum(abs(fft(x) .* fft(x)))
+
+disp('LHS = sum(abs(x) * abs(x)) = ')
+disp(LHS)
+disp('RHS = (1/N) * sum(abs(fft(x) * fft(x))) = ')
+disp(RHS)
+
+if LHS == RHS then
+    disp('LHS = RHS')
+    disp('Hence Parseval''s theorem proved')
 end
