@@ -1,0 +1,38 @@
+Enter the no. of elements in your x & y: 4
+
+
+  "x"
+Enter x(1) value: 0
+
+Enter x(2) value: 1
+
+Enter x(3) value: 2
+
+Enter x(4) value: 3
+
+
+  "y"
+Enter y(1) value: 1
+
+Enter y(2) value: 2
+
+Enter y(3) value: 3
+
+Enter y(4) value: 4
+
+Enter coefficient of x: 2
+
+Enter coefficient of y: 3
+
+
+  "LHS = a*fft(x)+b*fft(y) = "
+
+   42. + 0.i  -10. + 10.i  -10. + 0.i  -10. - 10.i
+
+  "RHS = fft(a*x +b*y) = "
+
+   42. + 0.i  -10. + 10.i  -10. + 0.i  -10. - 10.i
+
+  "LHS = RHS"
+
+  "Hence linearity proved"
