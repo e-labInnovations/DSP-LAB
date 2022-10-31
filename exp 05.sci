@@ -2,21 +2,11 @@ clc
 clear 
 close
 
-n = input("Enter the no. of elements in your x & y: ") //Input length of x
-x = []
-y = []
-
 disp('x')
-//Enter elements of x
-for k=1:1:n
-    x(1, k) = input('Enter x(' + string(k) + ') value: ') 
-end
+x = input('Values of x(n): ')
 
 disp('y')
-//Enter elements of y
-for k=1:1:n
-    y(1, k) = input('Enter y(' + string(k) + ') value: ') 
-end
+y = input('Values of y(n): ')
 
 a = input("Enter coefficient of x. a: ")
 b = input("Enter coefficient of y. b: ")
@@ -31,12 +21,13 @@ disp(RHS)
 
 if LHS == RHS then
     disp('LHS = RHS')
-    disp('Hence linearity proved')
+    disp('Hence linearity verified')
 end
 
 
 LHS = sum(abs(x) .* abs(x))
-RHS = (1/n) * sum(abs(fft(x) .* fft(x)))
+N = length(x)
+RHS = (1/N) * sum(abs(fft(x) .* fft(x)))
 
 disp('LHS = sum(abs(x) * abs(x)) = ')
 disp(LHS)
@@ -45,5 +36,37 @@ disp(RHS)
 
 if LHS == RHS then
     disp('LHS = RHS')
-    disp('Hence Parseval''s theorem proved')
+    disp('Hence Parseval''s theorem verified')
+end
+
+disp('h')
+h = input('Values of impulse responce: ')
+y1 = convol(h,x)
+if length(h)>length(x) then
+    e = length(h)
+else
+    e = length(x)
+    h = [h, zeros(1, e-length(h))]
+end
+
+y2 = []
+for i=1:1:e
+    y2(1,i) = y1(1,i)
+end
+
+for i=1:1:length(y1)-e
+    y2(1,i) = y2(1,i) + y1(1,i+e)
+end
+
+LHS = y2
+
+RHS = ifft(fft(x) .* fft(h))
+disp('LHS = circular convolution = ')
+disp(LHS)
+disp('RHS = ifft(fft(x) .* fft(h))  = ')
+disp(RHS)
+
+if LHS == RHS then
+    disp('LHS = RHS')
+    disp('Hence Convolution propety verified')
 end
