@@ -2,9 +2,16 @@ clc;
 clear;
 close;
 
-N = input("Enter the value of N: ")
-x = [1, 2, 3, 4]
-if N < length(x) then
+n = input("Enter the no. of elements in your x: ") //Input length of x
+x = []
+//Enter elements of x
+for k=1:1:n
+    x(1, k) = input('Enter ' + string(k) + 'th value: ') 
+end
+
+N = input("Enter the value of N: ") //Input N
+
+if N < n then
     halt("N must greater than length of x")
 end
 
@@ -23,3 +30,5 @@ amp = abs(X')
 title(string(N) + ' - DFT')
 plot(t, amp)
 plot2d3(t, amp)
+
+disp(X)
