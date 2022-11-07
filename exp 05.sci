@@ -44,6 +44,7 @@ h = input('Values of impulse responce: ')
 y1 = convol(h,x)
 if length(h)>length(x) then
     e = length(h)
+    x = [x, zeros(1, e-length(h))]
 else
     e = length(x)
     h = [h, zeros(1, e-length(h))]
@@ -59,7 +60,6 @@ for i=1:1:length(y1)-e
 end
 
 LHS = y2
-
 RHS = ifft(fft(x) .* fft(h))
 disp('LHS = circular convolution = ')
 disp(LHS)

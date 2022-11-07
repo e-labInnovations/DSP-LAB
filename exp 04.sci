@@ -2,15 +2,11 @@ clc;
 clear;
 close;
 
-n = input("Enter the no. of elements in your x: ") //Input length of x
 x = []
 //Enter elements of x
-for k=1:1:n
-    x(1, k) = input('Enter x(' + string(k) + ') value: ') 
-end
-
+x = input("enter the input x : ")
 N = input("Enter the value of N: ") //Input N
-
+n = length(x)
 if N < n then
     halt("N must greater than length of x")
 end
@@ -27,7 +23,7 @@ end
 X = W * x'
 
 disp("Wthout fft() function")
-disp(X')
+disp(X.')
 
 disp("With fft() function")
 disp(fft(x))
