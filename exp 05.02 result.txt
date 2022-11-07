@@ -1,0 +1,15 @@
+  "x"
+Values of x(n): [1 2 3 4]
+
+
+  "LHS = sum(abs(x) * abs(x)) = "
+
+   30.
+
+  "RHS = (1/N) * sum(abs(fft(x) * fft(x))) = "
+
+   30.
+
+  "LHS = RHS"
+
+  "Hence Parseval's theorem verified"

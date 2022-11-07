@@ -1,0 +1,20 @@
+
+  "x"
+Values of x(n): [1 2 3 4]
+
+
+  "h"
+Values of impulse responce: [1 1 1 1]
+
+
+  "LHS = circular convolution = "
+
+   10.   10.   10.   10.
+
+  "RHS = ifft(fft(x) .* fft(h))  = "
+
+   10.   10.   10.   10.
+
+  "LHS = RHS"
+
+  "Hence Convolution propety verified"

@@ -1,0 +1,19 @@
+  "x"
+Values of x(n): [1 2 3 4]
+
+
+  "y"
+Values of y(n): [1 1 1 1]
+
+Enter coefficient of x. a: 2
+
+Enter coefficient of y. b: 3
+
+
+  "LHS = a*fft(x)+b*fft(y) = "
+
+   32. + 0.i  -4. + 4.i  -4. + 0.i  -4. - 4.i
+
+  "RHS = fft(a*x +b*y) = "
+
+   32. + 0.i  -4. + 4.i  -4. + 0.i  -4. - 4.i
