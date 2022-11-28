@@ -12,3 +12,11 @@ Y=fft(y)
 amp=abs(Y)
 subplot(2,2,2)
 plot2d3(t,amp)
+
+Y=fft(y)
+Y=Y(:,1:(length(y)/2))
+amp=abs(Y)
+t=1:1:(length(y))/2
+for x=1:1:5
+subplot(2,2,3)
+plot2d3(t,amp)

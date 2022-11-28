@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project linear conv ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: C6000 Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-c6000_8.3.12/bin/cl6x" -mv6740 --include_path="C:/Users/acer/Desktop/ANAS/linear conv" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-c6000_8.3.12/include" --define=c6748 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "linear conv.out"
+Invoking: C6000 Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-c6000_8.3.12/bin/cl6x" -mv6740 --define=c6748 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"linear conv.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-c6000_8.3.12/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-c6000_8.3.12/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="linear conv_linkInfo.xml" --rom_model -o "linear conv.out" "./main.obj" "../C6748.cmd"  -llibc.a 
+<Linking>
+Finished building target: "linear conv.out"
+ 
+
+**** Build Finished ****
