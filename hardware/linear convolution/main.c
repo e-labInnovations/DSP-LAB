@@ -11,8 +11,7 @@ int i,k,n,l,m;
     Hn=(int *)0x80011000;       //input h(n)
     XnLength=(int *)0x80012000; //x(n) length
     HnLength=(int *)0x80012004; //h(n) length
-    Output=(int *)0x80013000;   // output address
-
+    Xn=(int *)0x80010000;       //input x(n)
     l=*XnLength;                // copy x(n) from memory address to variable l
     m=*HnLength;                // copy h(n) from memory address to variable m
 
