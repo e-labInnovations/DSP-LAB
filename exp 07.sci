@@ -1,0 +1,10 @@
+//LPF
+close;
+clc;
+clear;
+fs=2*10^3
+fc=250
+wc=2*fc/fs
+[h,hm,fr]=wfir("lp",11,wc/2,"hm",[0,0])
+plot(2*fr,20*log10(abs(hm)))
+xgrid();
