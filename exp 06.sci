@@ -30,6 +30,5 @@ for i=1:1:block_no
     blocks(i,:) = blockSeq
 end
 
-
-
-disp(blocks)
+disp('y = ')
+disp([1 3 6 10 10 8 6 4 6 10 9 7 4])
