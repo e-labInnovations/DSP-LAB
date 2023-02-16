@@ -1,8 +1,8 @@
 //Generate basic signals
 
-clc;
-clear;
-close;
+clc; //Clear Command Window
+clear; //kills variables
+close; //Close graphic window
 
 //Sine wave
 //sin(2*pi*f*t)
