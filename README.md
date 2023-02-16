@@ -13,6 +13,8 @@ The following files are available in the `/study` folder:
 - [06 - Circular Convolution Property.sce](./study/06%20-%20Circular%20Convolution%20Property.sce)
 - [07 - Parseval's Theorem.sce](./study/07%20-%20Parseval's%20Theorem.sce)
 - [08 - Overlap Save Method.sce](./study/08%20-%20Overlap%20Save%20Method.sce)
+- [09 - FIR Low Pass Filter Design.sce](./study/09%20-%20FIR%20Low%20Pass%20Filter%20Design.sce)
+- [10 - FIR Band Pass Filter Design.sce](./study/10%20-%20FIR%20Band%20Pass%20Filter%20Design.sce)
 
 
 ## Index
