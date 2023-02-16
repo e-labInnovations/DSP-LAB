@@ -15,6 +15,8 @@ The following files are available in the `/study` folder:
 - [08 - Overlap Save Method.sce](./study/08%20-%20Overlap%20Save%20Method.sce)
 - [09 - FIR Low Pass Filter Design.sce](./study/09%20-%20FIR%20Low%20Pass%20Filter%20Design.sce)
 - [10 - FIR Band Pass Filter Design.sce](./study/10%20-%20FIR%20Band%20Pass%20Filter%20Design.sce)
+- [11 - Filtering a signal using FIR LPF.sce](./study/11%20-%20Filtering%20a%20signal%20using%20FIR%20LPF.sce)
+- [12 - Circular Convolution using Linear](./study/12%20-%20Circular%20Convolution%20using%20Linear.sce)
 
 
 ## Index
