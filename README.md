@@ -17,6 +17,7 @@ The following files are available in the `/study` folder:
 - [10 - FIR Band Pass Filter Design.sce](./study/10%20-%20FIR%20Band%20Pass%20Filter%20Design.sce)
 - [11 - Filtering a signal using FIR LPF.sce](./study/11%20-%20Filtering%20a%20signal%20using%20FIR%20LPF.sce)
 - [12 - Circular Convolution using Linear](./study/12%20-%20Circular%20Convolution%20using%20Linear.sce)
+- [13 - Linear Convolution (Kit).c](./study/13%20-%20Linear%20Convolution%20(Kit).c)
 
 
 ## Index
