@@ -7,8 +7,7 @@
  *  2   2   4   6
  *  2   2   4   6
  */
- 
-#include <math.h>
+
 void main() {
     int *Xn, *Hn, *Yn;
     int *XnLength, *HnLength;
