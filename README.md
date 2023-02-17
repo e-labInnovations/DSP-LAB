@@ -22,6 +22,21 @@ The following files are available in the `/study` folder:
 - [15 - N-DFT (Kit).c](./study/15%20-%20N-DFT%20(Kit).c)
 
 
+```
+Me: How can I simulate DSP code written for TMS320C764X CPU without a physical development kit? Is there a software-based solution?
+
+ChatGPT: If you don't have access to a physical development kit for the TMS320C764X DSP CPU, you can simulate your DSP code using Code Composer Studio (CCS), which provides a built-in Processor Simulator. To simulate the code, you need to create a CCS project for your code, configure the project settings to use the Processor Simulator, and set up the memory map to match the memory layout of your actual hardware device. Once you have set up the simulation, you can run and debug your code as you would on a physical device. However, note that the behavior of the Processor Simulator may not be identical to that of an actual hardware device, so you may need to adjust your code or simulation settings to achieve accurate results.
+
+Here are the basic steps:
+
+1. Open CCS and create a new project for your DFT code.
+2. In the "Project Properties" dialog, go to "Build" > "Target Configurations" and create a new target configuration for the Processor Simulator.
+3. In the "Processor Simulator" tab of the target configuration, select the TMS320C764X DSP CPU model and configure the memory map to match the memory layout of your actual hardware device.
+4. Build the project for the Processor Simulator target configuration.
+5. Start the Processor Simulator by selecting the "Debug" perspective and clicking the "Start/Resume Debugging" button.
+6. Load the simulated code and set breakpoints as needed to debug the code.
+```
+
 ## Index
 1. Generation of basic test signals
 2. Verification of sampling theorem
