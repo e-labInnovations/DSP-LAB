@@ -22,20 +22,22 @@ The following files are available in the `/study` folder:
 - [15 - N-DFT (Kit).c](./study/15%20-%20N-DFT%20(Kit).c)
 
 
-```
-Me: How can I simulate DSP code written for TMS320C764X CPU without a physical development kit? Is there a software-based solution?
+## Simulating DSP Code for TMS320C674X CPU
 
-ChatGPT: If you don't have access to a physical development kit for the TMS320C764X DSP CPU, you can simulate your DSP code using Code Composer Studio (CCS), which provides a built-in Processor Simulator. To simulate the code, you need to create a CCS project for your code, configure the project settings to use the Processor Simulator, and set up the memory map to match the memory layout of your actual hardware device. Once you have set up the simulation, you can run and debug your code as you would on a physical device. However, note that the behavior of the Processor Simulator may not be identical to that of an actual hardware device, so you may need to adjust your code or simulation settings to achieve accurate results.
+**Me:** How can I simulate DSP code written for TMS320C674X CPU without a physical development kit? Is there a software-based solution?
 
-Here are the basic steps:
-
-1. Open CCS and create a new project for your DFT code.
-2. In the "Project Properties" dialog, go to "Build" > "Target Configurations" and create a new target configuration for the Processor Simulator.
-3. In the "Processor Simulator" tab of the target configuration, select the TMS320C764X DSP CPU model and configure the memory map to match the memory layout of your actual hardware device.
+**ChatGPT:** You can simulate your DSP code using software-based simulation tools like Code Composer Studio (CCS). CCS comes with a simulator that emulates the TMS320C674X CPU and provides a virtual environment for debugging and testing your code.
+To simulate your code using CCS, follow these basic steps:
+1. Open CCS and create a new project for your code.
+2. Create a new target configuration for the Processor Simulator in the "Project Properties" dialog.
+3. In the "Processor Simulator" tab of the target configuration, select the TMS320C674X CPU model and configure the memory map to match the memory layout of your actual hardware device.
 4. Build the project for the Processor Simulator target configuration.
 5. Start the Processor Simulator by selecting the "Debug" perspective and clicking the "Start/Resume Debugging" button.
 6. Load the simulated code and set breakpoints as needed to debug the code.
-```
+
+By simulating your code using CCS, you can test and debug your DSP code without the need for a physical development kit. This can be a more cost-effective solution for developers who do not have access to the hardware or who want to test their code before running it on actual hardware. 
+
+
 
 ## Index
 1. Generation of basic test signals
