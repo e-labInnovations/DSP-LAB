@@ -19,6 +19,7 @@ The following files are available in the `/study` folder:
 - [12 - Circular Convolution using Linear](./study/12%20-%20Circular%20Convolution%20using%20Linear.sce)
 - [13 - Linear Convolution (Kit).c](./study/13%20-%20Linear%20Convolution%20(Kit).c)
 - [14 - Circular Convolution (Kit).c](./study/14%20-%20Circular%20Convolution%20(Kit).c)
+- [15 - N-DFT (Kit).c](./study/15%20-%20N-DFT%20(Kit).c)
 
 
 ## Index
